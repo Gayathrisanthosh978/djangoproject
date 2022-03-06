@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%block body_block%}
+
+<div class="row mt-5" >
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                <h4>Customer Details</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">NAME: {{emp.empname}}</li>
+                <li class="list-group-item">DEPARTMENT: {{emp.department}}</li>
+                <li class="list-group-item">SALARY: {{emp.salary}}</li>
+                <li class="list-group-item">EXPERIENCE: {{emp.experience}}</li>
+                <li class="list-group-item">EMAIL: {{emp.email}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-4"></div>
+</div>
+{%endblock%}
